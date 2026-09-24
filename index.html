@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>3.3 - Build Message Bank v11 | Artera Home</title>
+<style>
+body{margin:0;background:#f6f1ea;color:#3b2f26;font:15px/1.6 Georgia,"Times New Roman",serif}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+.eyebrow{font:600 12px/1 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#7a6a3a}
+h1{font-size:30px;margin:8px 0 4px}h2{font-size:21px;margin:34px 0 10px;border-bottom:1px solid #d9ccb9;padding-bottom:6px}
+.sub{color:#6b5a4b;font-family:Arial,sans-serif;font-size:13px}
+.core{background:#5d6b3a;color:#fff;border-radius:10px;padding:14px 18px;margin:18px 0;font-family:Arial,sans-serif}
+.core b{font-size:16px}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;background:#fffdf9;font-family:Arial,sans-serif;font-size:13.5px;margin:8px 0}
+th{background:#ece2d3;text-align:left;padding:9px 10px;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+td{padding:9px 10px;border-top:1px solid #eadfce;vertical-align:top}
+td.copy{font-family:Georgia,serif;font-size:14.5px;color:#2d241c}
+.tag{display:inline-block;font-size:11px;padding:2px 7px;border-radius:9px;background:#e6ecd8;color:#4b5a2a;font-weight:600}
+.tag.w{background:#f3e3cf;color:#8a5a22}.tag.x{background:#f1dada;color:#8a2c2c}
+.note{font-family:Arial,sans-serif;font-size:13px;background:#fff8e8;border-left:3px solid #c9a24a;padding:10px 14px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px;margin-top:10px}
+.mock{background:#fff;border:1px solid #d9ccb9;border-radius:10px;padding:20px;text-align:center}
+.mock .lbl{font:600 11px Arial;letter-spacing:.1em;color:#9a8a74;text-transform:uppercase;margin-bottom:10px}
+.mock h3{font-size:20px;margin:6px 0}.mock .v{font-family:Arial;font-weight:700;font-size:13.5px;margin:8px 0}
+.mock .s{font-size:13.5px;color:#5c4d40}.mock .in{border:1px solid #cdbfa9;padding:9px;margin:12px 0 8px;text-align:left;color:#999;font:13px Arial}
+.mock .btn{background:#5d6b3a;color:#fff;padding:10px;font:700 12.5px Arial;letter-spacing:.06em}
+.mock .sm{font:12px Arial;color:#8a7b6a;margin-top:8px}
+ul{font-family:Arial,sans-serif;font-size:13.5px}
+</style></head><body><div class="wrap">
+<div class="eyebrow">Artera Home · Tối ưu Opt-in Email · Bước 3.3</div>
+<h1>Message Bank theo từng form</h1>
+<div class="sub">v11 · 24/09/2026 · Căn cứ: 1.2 Qualitative WHY v3 · 1.3 UX Audit v8 · 1.4 Competitor v4 · 3.1 Value Exchange v14 · Kiến trúc Opt-in &amp; Post-submit</div>
+
+<div class="core">Ưu đãi cốt lõi — giữ nguyên chữ ở mọi form:<br><b>10% off your first order, plus free shipping on orders $150+.</b><br>
+<span style="font-size:12.5px;opacity:.9">Chỉ xuất hiện 1 lần ở dòng Ưu đãi (opt-in) và 1 lần ở dòng Xác nhận (post-submit). Không đưa lên headline.</span></div>
+
+<h2>1. Nguyên tắc rút từ Phase 1</h2>
+<div class="tw"><table>
+<tr><th>Phát hiện</th><th>Áp dụng vào message</th><th>Nguồn</th></tr>
+<tr><td>Lý do từ chối lớn nhất: không rõ đăng ký để nhận gì</td><td>Liệt kê lợi ích cụ thể ngay dưới ưu đãi</td><td>1.2 D</td></tr>
+<tr><td>10% lặp ở form, Remind Code và email dễ biến hành trình thành chuỗi khuyến mãi</td><td>Headline không nhắc giảm giá; ưu đãi là món quà đi kèm</td><td>1.3 · 3.1</td></tr>
+<tr><td>Đối thủ lạm dụng "15% off", "VIP", "Member-only", "&amp; more"</td><td>Không dùng các cụm này; dẫn bằng giá trị hoặc lời mời</td><td>1.4 C</td></tr>
+<tr><td>Niềm tin thương hiệu còn mong manh; tin cậy đến từ sự cụ thể (Kim Sơn, nghệ nhân)</td><td>Không phóng đại; giữ 1 tín hiệu craft; thêm "No spam. Unsubscribe anytime."</td><td>1.2 A, B</td></tr>
+<tr><td>Mỗi form phục vụ một ngữ cảnh khác; 78% submit của form Homepage Mobile đến từ trang Collection</td><td>Headline và dòng lý do đổi theo form; ưu đãi, ô email, CTA giữ nguyên</td><td>1.3 §1</td></tr>
+<tr><td>Post-submit tốt nhất = xác nhận rõ + bước tiếp rõ</td><td>Không xin phone, không upsell</td><td>1.4 Bảng 2</td></tr>
+</table></div>
+
+<h2>2. Phần cố định cho mọi form</h2>
+<div class="tw"><table>
+<tr><th>Thành phần</th><th>Opt-in form</th><th>Post-submit</th></tr>
+<tr><td>Ưu đãi / Xác nhận quà</td><td class="copy">Join us for 10% off your first order, plus free shipping on orders $150+.</td><td class="copy">Your welcome offer is on its way to your inbox: 10% off your first order, plus free shipping on orders $150+.</td></tr>
+<tr><td>Lợi ích</td><td class="copy">Styling notes on size, placement and pairing · New pieces first · Stories from our makers</td><td class="copy">Look out for styling notes, new pieces and stories from our makers.</td></tr>
+<tr><td>Ô nhập</td><td class="copy">Your email address <span class="sub">(chỉ 1 ô)</span></td><td>—</td></tr>
+<tr><td>CTA</td><td class="copy">Get my welcome offer</td><td>Theo ngữ cảnh (mục 3)</td></tr>
+<tr><td>Dòng trấn an / Thoát</td><td class="copy">No spam. Unsubscribe anytime. · No thanks</td><td>Nút đóng X</td></tr>
+</table></div>
+<div class="note">Đã thay "Early sale access / Home inspiration" (bản v6) bằng lợi ích cụ thể hơn, vì 1.4 đánh giá "inspiration" là cụm bị lạm dụng và "early sale access" chưa xác nhận welcome flow có gửi. Chỉ giữ lợi ích mà chuỗi email thực sự giao.</div>
+
+<h2>3. Message theo ngữ cảnh từng form</h2>
+<p class="sub">Mỗi form có 2 phương án theo 3.1: <span class="tag">Value-led</span> dẫn bằng giá trị hoàn thiện không gian · <span class="tag w">Welcome-led</span> dẫn bằng lời mời.</p>
+
+<div class="tw"><table>
+<tr><th style="width:9%">Hướng</th><th>① Headline</th><th>③ Dòng lý do ở lại</th><th>Post-submit: Headline</th><th>Post-submit: CTA</th></tr>
+
+<tr><td><span class="tag">Value-led</span></td><td class="copy">The finishing layer your home's been missing.</td><td class="copy">Handwoven in Kim Sơn, and made to finish a room.</td><td class="copy">You're in.</td><td class="copy">Continue shopping</td></tr>
+<tr><td><span class="tag w">Welcome-led</span></td><td class="copy">You're invited in.</td><td class="copy">Meet the makers of Kim Sơn, and the pieces that finish a room.</td><td class="copy">Welcome in.</td><td class="copy">Continue shopping</td></tr>
+
+<tr><td><span class="tag">Value-led</span></td><td class="copy">Your wall is almost there.</td><td class="copy">Ideas for the last layer: the piece that finishes a room.</td><td class="copy">You're in.</td><td class="copy">Back to the collection</td></tr>
+<tr><td><span class="tag w">Welcome-led</span></td><td class="copy">Welcome. Something's waiting for you.</td><td class="copy">A small welcome from our weavers in Kim Sơn.</td><td class="copy">Welcome in.</td><td class="copy">Back to the collection</td></tr>
+
+<tr><td><span class="tag">Value-led</span></td><td class="copy">Finish the room around this piece.</td><td class="copy">Get tips on size, placement and pairing before you buy.</td><td class="copy">You're in.</td><td class="copy">Back to this piece</td></tr>
+<tr><td><span class="tag w">Welcome-led</span></td><td class="copy">Still deciding? A welcome gift first.</td><td class="copy">Take your time. We'll send ideas while you plan your space.</td><td class="copy">Welcome in.</td><td class="copy">Back to this piece</td></tr>
+
+<tr><td><span class="tag x">Ngoài phạm vi</span></td><td colspan="4" class="sub">Không viết lại ở bước này. Theo 1.3, cần chốt điều kiện hiển thị và rule ưu tiên trước để không cạnh tranh với form thu lead và email nhắc mã.</td></tr>
+</table></div>
+
+<h2>4. Minh hoạ cặp ưu tiên theo từng form (Value-led)</h2>
+<div class="grid">
+<div class="mock"><div class="lbl">Homepage – Desktop</div><h3>The finishing layer your home's been missing.</h3><div class="v">Join us for 10% off your first order, plus free shipping on orders $150+.</div><div class="s">Handwoven in Kim Sơn, and made to finish a room.</div><div class="in">Your email address</div><div class="btn">GET MY WELCOME OFFER</div><div class="sm">No spam. Unsubscribe anytime. · No thanks</div></div>
+<div class="mock"><div class="lbl">Homepage – Mobile</div><h3>Your wall is almost there.</h3><div class="v">Join us for 10% off your first order, plus free shipping on orders $150+.</div><div class="s">Ideas for the last layer: the piece that finishes a room.</div><div class="in">Your email address</div><div class="btn">GET MY WELCOME OFFER</div><div class="sm">No spam. Unsubscribe anytime. · No thanks</div></div>
+<div class="mock"><div class="lbl">Product Page – Mobile</div><h3>Finish the room around this piece.</h3><div class="v">Join us for 10% off your first order, plus free shipping on orders $150+.</div><div class="s">Get tips on size, placement and pairing before you buy.</div><div class="in">Your email address</div><div class="btn">GET MY WELCOME OFFER</div><div class="sm">No spam. Unsubscribe anytime. · No thanks</div></div>
+<div class="mock"><div class="lbl">Post-submit (mọi form)</div><h3>You're in.</h3><div class="v">Your welcome offer is on its way to your inbox: 10% off your first order, plus free shipping on orders $150+.</div><div class="s">Look out for styling notes, new pieces and stories from our makers.</div><div class="btn" style="margin-top:14px">CONTINUE SHOPPING</div><div class="sm">CTA đổi theo form: Back to the collection / Back to this piece</div></div>
+</div>
+
+<h2>5. Kiểm tra tính nhất quán</h2>
+<div class="tw"><table>
+<tr><th>Tiêu chí</th><th>Kết quả</th></tr>
+<tr><td>Ưu đãi đúng nguyên văn ở mọi form</td><td>Đạt: cùng một câu, không đổi số hay điều kiện</td></tr>
+<tr><td>Headline không nhắc giảm giá</td><td>Đạt: cả 6 headline</td></tr>
+<tr><td>Không dùng "VIP / exclusive / &amp; more / best / perfect / transform"</td><td>Đạt</td></tr>
+<tr><td>Post-submit chỉ nhắc lại lợi ích đã hứa, không hứa mới, không xin thêm dữ liệu</td><td>Đạt</td></tr>
+<tr><td>Một CTA opt-in cho mọi form, chỉ headline và dòng lý do thay đổi (dễ A/B)</td><td>Đạt</td></tr>
+</table></div>
+
+<h2>6. Cần chị xác nhận trước khi đưa lên Klaviyo</h2>
+<div class="tw"><table>
+<tr><th>Điểm</th><th>Vì sao</th><th>Đề xuất</th></tr>
+<tr><td>Welcome flow có giao "styling notes" và "stories from our makers" không</td><td>Form hứa gì thì email phải giao đúng; niềm tin thương hiệu còn mong manh</td><td>Rà chuỗi welcome email hiện tại; nếu thiếu, bỏ lợi ích đó khỏi form</td></tr>
+<tr><td>Product Page form có đang hiện ở Cart/Checkout</td><td>1.3 khuyến nghị loại trừ để không làm gián đoạn lúc thanh toán</td><td>Loại trừ Cart / Checkout / Thank-you trước khi dùng copy PDP</td></tr>
+<tr><td>Hướng test đầu tiên</td><td>Cần một biến mỗi lần để đọc kết quả rõ</td><td>Test Value-led vs Welcome-led trên Homepage Mobile (lưu lượng lớn nhất); control = "The first weave is on us."</td></tr>
+</table></div>
+
+<p class="sub" style="margin-top:28px">Artera Home · Bước 3.3 Build Message Bank · v11 · 24/09/2026 · Bản để test, chưa phải copy chốt.</p>
+</div></body></html>
+
